@@ -59,6 +59,17 @@ app.post('/login',(req,res)=>
     }
 })
 
+app.post('/register',(req,res)=>
+{
+    var name=req.body.name;
+    var admno=req.body.admnumber;
+    var colg=req.body.college;
+    var user=req.body.username;
+    var pass=req.body.password;
+
+    res.send(name+admno+colg+user+pass)
+})
+
 app.listen(process.env.PORT || 2255,()=>
 {
     console.log('web app runing succesfully')
