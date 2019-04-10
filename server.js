@@ -59,7 +59,7 @@ app.post('/login',(req,res)=>
     }
 })
 
-app.listen(2255,()=>
+app.listen(process.env.PORT || 2255,()=>
 {
     console.log('web app runing succesfully')
 });       //to run
