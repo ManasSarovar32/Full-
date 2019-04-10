@@ -67,7 +67,7 @@ app.post('/register',(req,res)=>
     var user=req.body.username;
     var pass=req.body.password;
 
-    res.send(name+admno+colg+user+pass)
+    res.send(name<br>+admno<br>+colg+user+pass)
 })
 
 app.listen(process.env.PORT || 2255,()=>
