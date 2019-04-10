@@ -64,7 +64,8 @@ app.post('/register',(req,res)=>
     var name=req.body.name;
     var admno=req.body.admnumber;
     var colg=req.body.college;
-    
+    var user=req.body.username;
+    var pass=req.body.password;
 
     res.send(name+admno+colg+user+pass)
 })
