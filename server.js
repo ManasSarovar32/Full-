@@ -51,11 +51,11 @@ app.post('/login',(req,res)=>
     
     if(user=='admin'&&pass=='1234')
     {
-        res.send('success')
+        res.send(JSON.stringify({status:'success'}))
     }
     else
     {
-        res.send('failed')
+        res.send(JSON.stringify({status:'failed'}))
     }
 })
 
@@ -64,8 +64,7 @@ app.post('/register',(req,res)=>
     var name=req.body.name;
     var admno=req.body.admnumber;
     var colg=req.body.college;
-    var user=req.body.username;
-    var pass=req.body.password;
+    
 
     res.send(name+admno+colg+user+pass)
 })
